@@ -73,12 +73,15 @@ footer a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden
 }
 
 .footer-nav>div {
   width: 70%;
   margin: 0 auto;
   padding: 20px 0;
+  height: 400px;
+  overflow: hidden;
 }
 
 .footer-nav .nav {
@@ -90,8 +93,12 @@ footer a {
   margin: 10px;
 }
 
-/* .footer-nav img{
-} */
+.footer-nav img {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: -80px;
+}
 
 .footer-social {
   background-color: #303030;
@@ -105,10 +112,11 @@ footer a {
 
 .footer-social .social {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
-.footer-social .singup{
+.footer-social .singup {
   color: white;
   font-size: 20px;
   font-weight: 700;
@@ -116,8 +124,13 @@ footer a {
   padding: 10px
 }
 
-.footer-social .social div{
+.footer-social .social div {
   color: #0c7cec;
   font-size: 20px;
   font-weight: 700;
+}
+
+.footer-social .social img {
+  width: 30px;
+  height: 30px;
 }
