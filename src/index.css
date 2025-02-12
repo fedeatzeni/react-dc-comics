@@ -33,3 +33,91 @@ header .nav a:hover {
   border-bottom: 2px solid #0c7cec;
   padding-bottom: 20px;
 }
+
+/* main */
+main {
+  background-color: black;
+}
+
+main>div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 40px;
+  color: white;
+  padding: 40px 0;
+}
+
+/* footer */
+footer h2 {
+  color: white;
+  font-weight: 700;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-nav>div,
+.footer-social>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  background-image: url(../public/img/footer-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-nav>div {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-nav .nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-nav .nav .col {
+  margin: 10px;
+}
+
+/* .footer-nav img{
+} */
+
+.footer-social {
+  background-color: #303030;
+}
+
+.footer-social>div {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-social .social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social .singup{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid #0c7cec;
+  padding: 10px
+}
+
+.footer-social .social div{
+  color: #0c7cec;
+  font-size: 20px;
+  font-weight: 700;
+}
