@@ -1,4 +1,7 @@
+import Navbar from "./Navbar.jsx"
+
 export default function Header() {
+
     const links = [
         { id: 1, name: "CHARACTERS", url: "#", current: false },
         { id: 2, name: "COMICS", url: "#", current: true },
@@ -15,20 +18,8 @@ export default function Header() {
     return (
         <header>
             <img src="./img/dc-logo.png" alt="" />
-            <div className="nav">
-                {/* <a href="">CHARACTERS</a>
-                <a href="">COMICS</a>
-                <a href="">MOVIES</a>
-                <a href="">TV</a>
-                <a href="">GAMES</a>
-                <a href="">COLLECTIBLES</a>
-                <a href="">VIDEOS</a>
-                <a href="">FANS</a>
-                <a href="">NEWS</a>
-                <a href="">SHOP</a> */}
 
-                {links.map((el) => <a href={el.url} key={el.id} className={el.current ? "active" : ""}>{el.name}</a>)}
-            </div>
+            <Navbar linksProps={links} />
         </header>
     )
 }
