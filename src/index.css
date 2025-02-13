@@ -89,7 +89,6 @@ footer h2 {
 footer a {
   color: white;
   text-decoration: none;
-  display: block;
 }
 
 .footer-nav>div,
@@ -121,6 +120,14 @@ footer a {
 
 .footer-nav .nav .col {
   margin: 10px;
+}
+
+.footer-nav .nav .col>.nav {
+  display: block;
+}
+
+.footer-nav .nav .col>.nav a{
+  display: block;
 }
 
 .footer-nav img {

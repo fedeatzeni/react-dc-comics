@@ -1,4 +1,45 @@
+import Navbar from "./Navbar.jsx"
+
 export default function Footer() {
+
+    const linkMain = [
+        { id: 1, name: "Characters", url: "#" },
+        { id: 2, name: "Comics", url: "#" },
+        { id: 3, name: "Movies", url: "#" },
+        { id: 4, name: "TV", url: "#" },
+        { id: 5, name: "Games", url: "#" },
+        { id: 6, name: "Videos", url: "#" },
+        { id: 7, name: "News", url: "#" },
+    ];
+
+    const linkShop = [
+        { id: 1, name: "Shop", url: "#" },
+        { id: 2, name: "Shop Collectibles", url: "#" },
+    ];
+
+    const linkDC = [
+        { id: 1, name: "Terms Of Use", url: "#" },
+        { id: 2, name: "Privacy Policy", url: "#" },
+        { id: 3, name: "Ad Choices", url: "#" },
+        { id: 4, name: "Advertising", url: "#" },
+        { id: 5, name: "Jobs", url: "#" },
+        { id: 6, name: "Subscription", url: "#" },
+        { id: 7, name: "Talent Workshops", url: "#" },
+        { id: 8, name: "CPSC Certificates", url: "#" },
+        { id: 9, name: "Rating", url: "#" },
+        { id: 10, name: "Shop Help", url: "#" },
+        { id: 11, name: "Contact Us", url: "#" },
+    ];
+
+    const linkSites = [
+        { id: 1, name: "DC", url: "#" },
+        { id: 2, name: "MAD Magazine", url: "#" },
+        { id: 3, name: "DC Kids", url: "#" },
+        { id: 4, name: "DC Universe", url: "#" },
+        { id: 5, name: "DC Power Visa", url: "#" }
+    ];
+
+
     return (
         <footer>
             <div className="footer-nav">
@@ -6,42 +47,21 @@ export default function Footer() {
                     <div className="nav">
                         <div className="col">
                             <h2>DC COMICS</h2>
-                            <a href="">Characters</a>
-                            <a href="">Comics</a>
-                            <a href="">Movies</a>
-                            <a href="">TV</a>
-                            <a href="">Games</a>
-                            <a href="">Videos</a>
-                            <a href="">News</a>
+                            <Navbar linksProps={linkMain}/>
 
                             <br />
                             <h2>SHOP</h2>
-                            <a href="">Shop</a>
-                            <a href="">Shop Collectionables</a>
+                            <Navbar linksProps={linkShop}/>
                         </div>
 
                         <div className="col">
                             <h2>DC</h2>
-                            <a href="">Terms Of Use</a>
-                            <a href="">Privacy policy</a>
-                            <a href="">Ad Choises</a>
-                            <a href="">Advertising</a>
-                            <a href="">Jobs</a>
-                            <a href="">Subscription</a>
-                            <a href="">Talent Workshows</a>
-                            <a href="">CPSC Certificates</a>
-                            <a href="">Rating</a>
-                            <a href="">Shop Help</a>
-                            <a href="">Contact Us</a>
+                            <Navbar linksProps={linkDC}/>
                         </div>
 
                         <div className="col">
                             <h2>SITES</h2>
-                            <a href="">DC</a>
-                            <a href="">MAD Magazine</a>
-                            <a href="">DC Kids</a>
-                            <a href="">DC Universe</a>
-                            <a href="">DC Power Visa</a>
+                            <Navbar linksProps={linkSites}/>
 
                         </div>
                     </div>
