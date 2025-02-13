@@ -1,9 +1,22 @@
 export default function Header() {
+    const links = [
+        { id: 1, name: "CHARACTERS", url: "#", current: false },
+        { id: 2, name: "COMICS", url: "#", current: true },
+        { id: 3, name: "MOVIES", url: "#", current: false },
+        { id: 4, name: "TV", url: "#", current: false },
+        { id: 5, name: "GAMES", url: "#", current: false },
+        { id: 6, name: "COLLECTIBLES", url: "#", current: false },
+        { id: 7, name: "VIDEOS", url: "#", current: false },
+        { id: 8, name: "FANS", url: "#", current: false },
+        { id: 9, name: "NEWS", url: "#", current: false },
+        { id: 10, name: "SHOP", url: "#", current: false },
+    ]
+
     return (
         <header>
             <img src="./img/dc-logo.png" alt="" />
             <div className="nav">
-                <a href="">CHARACTERS</a>
+                {/* <a href="">CHARACTERS</a>
                 <a href="">COMICS</a>
                 <a href="">MOVIES</a>
                 <a href="">TV</a>
@@ -12,7 +25,9 @@ export default function Header() {
                 <a href="">VIDEOS</a>
                 <a href="">FANS</a>
                 <a href="">NEWS</a>
-                <a href="">SHOP</a>
+                <a href="">SHOP</a> */}
+
+                {links.map((el) => <a href={el.url} key={el.id} className={el.current ? "active" : ""}>{el.name}</a>)}
             </div>
         </header>
     )
