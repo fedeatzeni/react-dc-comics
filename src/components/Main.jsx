@@ -1,11 +1,12 @@
 import MainNav from "./MainNav.jsx"
+import ComicsList from "./comics/ComicsList.jsx"
 
 
 export default function Main() {
     return (
         <main>
             <div>
-                <h1>Content here</h1>
+                <ComicsList />
             </div>
             <MainNav />
         </main>

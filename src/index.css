@@ -43,12 +43,45 @@ main {
 main>div {
   width: 70%;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
-main h1 {
-  font-size: 40px;
+main h2 {
+  font-size: 20px;
   color: white;
-  padding: 40px 0;
+  background-color: #0c7cec;
+  display: inline;
+  padding: 5px 10px;
+}
+
+main .btn {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+main .btn>div {
+  background-color: #0c7cec;
+  padding: 5px 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+main .comics-list {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main .comics-list .comic {
+  flex-basis: 15%;
+  margin: 30px 0;
+}
+
+main .comics-list img {
+  width: 100%;
 }
 
 main .container {
@@ -126,7 +159,7 @@ footer a {
   display: block;
 }
 
-.footer-nav .nav .col>.nav a{
+.footer-nav .nav .col>.nav a {
   display: block;
 }
 
